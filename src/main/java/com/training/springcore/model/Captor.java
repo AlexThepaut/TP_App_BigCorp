@@ -14,6 +14,11 @@ public class Captor {
      */
     private String name;
 
+    /**
+     * Type of power source
+     */
+    private PowerSource powerSource;
+
     @Deprecated
     public Captor() {
         // Use for serializer or deserializer
@@ -43,6 +48,14 @@ public class Captor {
         this.name = name;
     }
 
+    public PowerSource getPowerSource() {
+        return powerSource;
+    }
+
+    public void setPowerSource(PowerSource powerSource) {
+        this.powerSource = powerSource;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -64,4 +77,5 @@ public class Captor {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }
