@@ -11,6 +11,7 @@ import java.util.Set;
 @Profile("prod")
 @PropertySource("classpath:application.properties")
 @PropertySource(value="classpath:application-prod.properties", ignoreResourceNotFound=true)
+@EnableAspectJAutoProxy
 public class BigCorpApplicationProdConfig {
 
     @Autowired
