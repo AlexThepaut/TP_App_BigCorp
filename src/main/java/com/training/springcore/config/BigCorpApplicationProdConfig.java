@@ -10,6 +10,7 @@ import java.util.Set;
 @Configuration
 @Profile("prod")
 @PropertySource("classpath:application.properties")
+@PropertySource(value="classpath:application-prod.properties", ignoreResourceNotFound=true)
 public class BigCorpApplicationProdConfig {
 
     @Autowired
