@@ -1,14 +1,7 @@
 package com.training.springcore.service;
 
-import com.training.springcore.BigCorpApplication;
-import com.training.springcore.BigCorpApplicationConfig;
 import com.training.springcore.model.Captor;
-import com.training.springcore.model.PowerSource;
-import com.training.springcore.service.measure.FixedMeasureService;
 import com.training.springcore.service.measure.MeasureService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
